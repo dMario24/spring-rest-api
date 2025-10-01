@@ -5,8 +5,8 @@ plugins {
 }
 
 group = 'com.example'
-version = '0.0.1-SNAPSHOT'
-description = 'Demo project for Spring Boot'
+version = '0.1.2'
+description = 'MY REST API'
 
 java {
 	toolchain {

@@ -59,7 +59,5 @@ datamario24/spring-rest-api   0.3.0           df8b2c938eac   43 seconds ago   34
 
 $ sudo docker push datamario24/spring-rest-api:0.3.0
 
-
-
 $ sudo docker status
 ```

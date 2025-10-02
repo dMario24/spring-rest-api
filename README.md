@@ -41,3 +41,25 @@ $ ssh -i <KEY.pem> ubuntu@<SERVER_IP> \
 $ ssh -i <KEY.pem> ubuntu@<SERVER_IP> \
 "cd /home/ubuntu/app/spring-rest-api;pwd;./stop.sh"
 ```
+
+## Dockerizing
+- https://spring.io/guides/gs/spring-boot-docker
+- openJDK 17
+```bash
+# 빌드
+$ ./gradlew clean bootJar
+$ sudo docker build --build-arg JAR_FILE=build/libs/\*.jar \
+-t datamario24/spring-rest-api:0.3.0 .
+
+# Run
+# sudo docker run -d -p 8030:8080 --name srq030 datamario24/spring-rest-api:0.3.0
+
+$ sudo docker images | grep spring-rest-api
+datamario24/spring-rest-api   0.3.0           df8b2c938eac   43 seconds ago   347MB
+
+$ sudo docker push datamario24/spring-rest-api:0.3.0
+
+
+
+$ sudo docker status
+```

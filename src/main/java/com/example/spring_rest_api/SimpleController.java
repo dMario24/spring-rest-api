@@ -13,7 +13,7 @@ public class SimpleController {
 	public Map<String, Object> sayHello(){
 		
 		return Map.of(
-				"message", "Hello, World!",
+				"message", "Hello, Jenkins!",
 				"timesptamp", System.currentTimeMillis(),
 				"koreatime", ZonedDateTime.now(ZoneId.of("Asia/Seoul")).toString() 
 			     );
